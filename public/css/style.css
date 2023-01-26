@@ -1,0 +1,525 @@
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Roboto', sans-serif;
+}
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.hamburguer-button{
+    background-color:#1259c3;
+    color: #ffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.header-logo{
+    width: 300px;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    
+}
+.last-visit, .offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+.fa-truck:hover{
+    transition: 1000ms;
+    transform: rotate(-90deg);
+}
+
+main section article:hover .description {
+    display: block;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article .main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+}
+/* .footer-conteiner{
+    display: flex;
+    padding: 80px;
+}
+.article-footer{
+    text-align: center;
+    margin: 35px 55px;
+} */
+
+ .fa-credit-card,.fa-gift, .fa-user-shield{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.fa-gift:hover{
+    color: #666;
+}
+.fa-credit-card:hover{
+    color: #666;
+}
+.fa-user-shield:hover{
+    color: #666;
+}
+h4 b{
+    font-size: 20px;
+}
+/* .align-footer{
+    text-align: center;
+} */
+/* .fa-credit-card{
+    text-align: center;
+}
+
+.fa-gift{
+    font-size: 2em;
+    text-align: center; 
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    text-align: center; 
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.copyright{
+    text-align: center;
+    color: #000000;
+} */
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+    .price, .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+       max-width: 350px;
+       text-align: right;
+    }
+    .hamburguer-button{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    main section div.products article{
+        width: 22%;
+    }
+    .footer-conteiner{
+        display: flex;
+        padding: 80px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .logo{
+        width: 250px;
+    }
+    .main-header-top-bar,.main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    
+    }
+    .copy-header{
+        margin: 0;
+       max-width: none;
+       font-size: 18px;
+       font-weight: 400;
+    } 
+    .main-navbar{
+        margin-top: 25px;
+    }    
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+    font-size: 19px;
+    }
+    .footer-conteiner{
+        display: flex;
+        padding: 80px;
+        justify-content: space-between; 
+    }
+}
+
+ /* a {
+    text-decoration: none;
+}
+header {
+    background-color: #EAC926;
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+img {
+    width: 20%;
+}
+
+.logoMercado{
+    width: 200px;
+}
+
+.header-title{
+    text-align: center;
+    font-size: 23px;
+    font-weight: lighter;
+}
+.fa-hand-holding-dollar {
+    margin: 10px;
+    font-size: 25px;
+}
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 5px 0;
+    display: inline-block;
+}
+.fa-id-card {
+    margin-left: 5px;
+}
+
+.fa-right-to-bracket {
+    margin-left: 5px;
+}
+
+.fa-basket-shopping {
+    margin-left: 5px;
+}
+
+li a{
+    color: black;
+    font-size: 11px;
+    text-decoration: none;
+}
+.align-img{
+    text-align: center;
+    border: solid 1px #ebebeb;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.burguer-menu{
+    border: 1px solid #1259c3;
+    display: block;
+    max-width: 80px;
+    max-height: 60px;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: #1259c3;
+    border-radius: 8px;
+}
+
+.fa-bars{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    line-height: 40px;
+    margin-left: 9px;
+}
+
+
+.navegation{
+    margin: 10px 0;
+}
+.main-imagen{
+    width: 30%;
+}
+.titles{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.prices{
+    font-size: 18px;
+    /* text-align: center;
+}
+
+.discount-article {
+    font-size: 16px;
+    text-align: center;
+}
+.description-article{
+    font-size: 16px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: solid 1px #ebebeb;
+}
+main{
+    margin: 0 auto;
+    width: 90vw;
+    text-align: center;
+}
+
+article{
+    margin: 10px;
+    background-color: #fff;
+}
+.main-imagen {
+    width: 30%;
+    text-align: center;
+}
+.conteiner{
+    border-top: #ebebeb 1px solid;
+    padding: 15px;
+}
+section i{
+    color: #1259c3;
+    width: 2em;
+    height: 2em;
+    margin: 10px;
+}
+
+.align-footer{
+    text-align: center;
+}
+.fa-credit-card{
+    font-size: 2em;
+    text-align: center;
+}
+
+.fa-gift{
+    font-size: 2em;
+    text-align: center; 
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    text-align: center; 
+}
+
+.footer-tittle {
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.price-box{
+    display: flex;
+    align-items: stretch;
+    padding-right:10px ;
+}
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-tittle {
+        max-width: 350px;
+        text-align: right;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+    
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-navbar ul {
+        display: flex;
+    
+    }
+    
+    .main-navbar li {
+        margin: 0 4px;
+}
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 250px;
+    }
+
+    .main-header-top-bar,
+    .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .header-tittle {
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: right;
+        margin: 0;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    
+    .main-navbar a {
+        font-size: 19px;
+    } */

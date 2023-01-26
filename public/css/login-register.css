@@ -1,0 +1,99 @@
+/* ---------Registro---------------- */
+.body-register{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.create-form{
+   padding:20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px;   
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 350px;
+    padding: 8px 8px;
+}
+.boton-formulario{
+    background-color: #7e0a92;
+    border: none;
+    font-size: 20px;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 41px;
+}
+/*--------- LOGIN-------------- */
+
+.body-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+.form-body{
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    border: solid 2px  #1259c3;
+}
+
+.text{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1259c3;
+    padding: 50px 30px;
+}
+.name-login{
+    font-size: 20px;
+    text-align: center;
+}
+.input-login{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.form-body input .input-login:hover{
+    transition: 8s;
+    border: solid #eeff01;
+    color: rgb(74, 72, 72);
+}
+.form-body button{
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #1259c3;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 78%;
+}
+
+.form-body button:hover{
+    color: #03264C;
+}
+
+.login-logo {
+    width: 300px;
+}
+
+.register-logo {
+    width: 300px;
+}

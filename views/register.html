@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/590d131412.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login-register.css">
+    <link rel="html" href="/views/home.html">
+    <link rel="html" href="/views/login.html">
+    <title>Register</title>
+</head>
+
+<body>
+    <header class="main-header">
+    <div class="main-header-top-bar">
+        <img class="register-logo" src="/images/MLH.png">
+        <div class="main-header-bottom-bar"></div>
+        <h2 class="copy-header"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+    </div>
+
+    <a href="#" class="hamburguer-button">
+        <i class="fas fa-bars"></i></a>
+
+    <nav class="main-navbar">
+        <ul class="left-navbar">
+            <li><a href="#" target="_blank">Ofertas</a> <i class="fa-solid fa-tag"></i></li>
+            <li><a href="#" target="_blank">Tiendas Oficiales</a> <i class="fa-solid fa-store"></i></li>
+            <li><a href="#" target="_blank">Vender</a> <i class="fa-solid fa-comments-dollar"></i></li>
+            <li><a href="#" target="_blank">Ayuda</a> <i class="fa-solid fa-phone-volume"></i></li>
+        </ul>
+
+        <ul class="right-navbar">
+            <li><a href="/views/register.html" target="_blank">Creá tu cuenta</a> <i class="fa-solid fa-pen-to-square"></i><
+            </li>
+            <li><a href="/views/login.html" target="_blank">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i>
+            </li>
+            <li><a href="#" target="_blank">Mis compras</a> <i class="fa-solid fa-truck-fast"></i></li>
+        </ul>
+    </nav>
+</header>
+    </section>
+    <div class="body-register">
+        <form action="/" class="create-form">
+            <div class="control-formulario">
+                <label for="name"> Nombre y Apellido</label>
+                <input class="control" type="text" name="name" placeholder="Nombre & Apellido">
+            </div>
+            <div class="control-formulario">
+                <label for="username">Nombre de Usuario</label>
+                <input class="control" type="text" name="username" placeholder="Nombre de Usuario">
+            </div>
+            <div class="control-formulario">
+                <label for="email">Ingrese su email</label>
+                <input class="control" type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="control-formulario">
+                <label for="date">Fecha de Nacimiento</label>
+                <input class="control" type="date" name="date" id="date">
+            </div>
+            <div class="control-formulario">
+                <label for="address">Ingrese su domicilio</label>
+                <input class="control" type="text" name="address" id="address" placeholder="Domicilio">
+            </div>
+            <div class="control-formulario">
+                <label for="">Perfil del Usuario</label>
+                <select class="control" name="user-profile"> 
+                <option class="control" value="comprador" name="user-profile" id="">Comprador</option>
+                <option class="control" value="vendedor" name="user-profile" id="">Vendedor</option>
+            </select>
+            </div>
+            <div class="control-formulario">
+                <label>Intereses</label>
+                <select class="control" name="intereses">
+                    <option value="none" name="intereses"></option>
+                    <option value="electro" name="intereses">Electro</option>
+                    <option value="moda" name="intereses">Moda</option>
+                    <option value="hogar" name="intereses">Hogar</option>
+                    <option value="jugueteria" name="intereses">Jugueteria</option>
+                    <option value="vida-sana" name="intereses">Vida Sana</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label for="password">Escriba su Contraseña</label>
+                <input class="control" type="password" name="password" placeholder="Escriba contraseña">
+            </div>
+            <div class="control-formulario">
+                <label for="password">Confirme su Contraseña</label>
+                <input class="control" type="password" name="password-confirm" placeholder="Confirme contraseña">
+            </div>
+                <button class="boton-formulario" type="submit">Enviar</button>
+                <button class="boton-formulario" type="reset">Borrar</button>
+        </form>
+    </div>
+</body>
+</html>
